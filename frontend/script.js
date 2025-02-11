@@ -1,4 +1,5 @@
-const backendUrl = 'http://localhost:3000/api';
+const hostname = location.hostname
+const backendUrl = `http://${hostname}:3000/api`;
 
 async function fetchFiles() {
   const response = await fetch(`${backendUrl}/files`);
