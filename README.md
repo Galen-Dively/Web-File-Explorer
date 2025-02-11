@@ -34,9 +34,9 @@ cd web-file-explorer
 Run the following command to build and start the Docker containers:
 
 ```bash
-FROTEND_PORT="Port of your choosing" docker-compose up --build
+docker-compose up --build
 ```
 ### 3. Access the Application
-Open your browser and navigate to http://localhost.
+Open your browser and navigate to http://localhost:5555.
 
 You should see the file explorer interface.
