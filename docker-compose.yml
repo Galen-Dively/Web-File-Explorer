@@ -9,6 +9,6 @@ services:
   frontend:
     image: nginx:latest
     ports:
-      - "80:80"
+      - "${FRONTEND_PORT}:80" # Use environment variable for the port
     volumes:
       - ./frontend:/usr/share/nginx/html
